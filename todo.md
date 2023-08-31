@@ -12,17 +12,17 @@ git remote -v
 
 
 ## Синхронизируем локальный и удалённый репозитории
-https://practicum.yandex.ru/trainer/git-basics/lesson/89142add-f139-4c26-a467-4628eac2d0a7/
-$ 
-git push -u origin main 
-# Если команда приведёт к ошибке, попробуйте 
-# заменить main на master.
+https://practicum.yandex.ru/trainer/git-basics/lesson/89142add-f139-4c26-a467-4628eac2d0a7/  
+$  
+git push -u origin main  
+Если команда приведёт к ошибке, попробуйте  
+заменить main на master.  
 
 
 ## Исследуем лог
-$
-git log --oneline
-q
+$  
+git log --oneline  
+q  
 
 
 
