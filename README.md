@@ -36,20 +36,20 @@ https://www.markdownguide.org/cheat-sheet/
 
 
 ## Код
-''' bash
+``` bash
 ls -la
-'''
-''' html
+```
+```html
 <h1>А я просто текст</h1>
-'''
+```
 
-''' C++
+```C++
 #include <iostream>
 int main()
 {    
     return 0;
 }
-'''
+```
 
 
 # Шпаргалка markdown
