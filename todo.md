@@ -29,6 +29,7 @@ q
 https://www.conventionalcommits.org/ru/v1.0.0-beta.4/#спецификация  
 
 ## Mermaid  
+%% описание схемы  
 https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/  
 
 ```mermaid
