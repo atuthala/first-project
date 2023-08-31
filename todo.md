@@ -28,6 +28,18 @@ q
 ## Соглашение о коммитах  
 https://www.conventionalcommits.org/ru/v1.0.0-beta.4/#спецификация  
 
+## Mermaid  
+https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/  
+
+```mermaid
+graph LR;
+  untracked -- "git add" --> staged;
+  staged    -- "???"     --> tracked/comitted;
+
+%% стрелка без текста для примера: 
+  A --> B;
+``` 
+
 
 
 
