@@ -42,6 +42,11 @@ graph LR;
 ``` 
 
 
+## Как исправить коммит  
+git commit --amend --no-edit  
+git commit --amend -m 'Переименовать коммит'  
+Esc :qa! - выход из Vim  
+Исправили.
 
 
 
