@@ -57,21 +57,24 @@ Esc :qa! - выход из Vim
 
 
 ## Просматриваем изменения в файлах  
-git diff <коммит1> <коммит2>
-git diff --staged
+git diff <коммит1> <коммит2>  
+git diff --staged  
 
 
 ## [Игнорирование файлов в Git](https://practicum.yandex.ru/trainer/git-basics/lesson/92ba6ab8-c151-45ad-a0be-ffa4de31c537/)  
-.gitignore
-*.jpeg
-!doge.jpeg - инвертировать игнорирование
-docs/*/tmp
-file?.txt
-file[0-7].txt
-/todo.txt - только в корневой директории
-build/ - игнорировать папку build
-docs/**/tmp - игнорировать в папке и подпапках
-*.log - игнорировать все
-!examples/**/*.log - не игнорировать в папках examples
-git status --ignored
+.gitignore  
+*.jpeg  
+!doge.jpeg - инвертировать игнорирование  
+docs/*/tmp  
+file?.txt  
+file[0-7].txt  
+/todo.txt - только в корневой директории  
+build/ - игнорировать папку build  
+docs/**/tmp - игнорировать в папке и подпапках  
+*.log - игнорировать все  
+!examples/**/*.log - не игнорировать в папках examples  
+git status --ignored  
+
+
+## [Шпаргалка. Начало работы с Git](https://practicum.yandex.ru/trainer/git-basics/lesson/b1ecee27-bb78-46a0-8d13-0364c7803f55/)  
 
