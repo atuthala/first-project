@@ -78,3 +78,16 @@ git status --ignored
 
 ## [Шпаргалка. Начало работы с Git](https://practicum.yandex.ru/trainer/git-basics/lesson/b1ecee27-bb78-46a0-8d13-0364c7803f55/)  
 
+
+## [Что такое ветка](https://practicum.yandex.ru/trainer/git-basics/lesson/e24f2080-0f2e-4f48-8d18-629ca1ad47fd/)
+$ mkdir learn_branches && cd learn_branches && git init # создали новый репозиторий
+$ touch README.md # создали файл
+
+$ git add . # команда git add с флагом-точкой подготовит к сохранению текущую папку; вместо этого можно вызвать git add --all
+$ git commit -m "Выполнить первый коммит"
+
+$ git branch 
+* main # мы в основной ветке
+
+// чтобы выйти из просмотра веток, может понадобиться Q!
+$ git add . && git commit -m "Обновить README" 
