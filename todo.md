@@ -125,6 +125,7 @@ $ git checkout experimental
 
 
 
-
-
+[Объединяем и удаляем ветки](https://practicum.yandex.ru/trainer/git-basics/lesson/60a94ca8-1517-45bd-9d23-ceb1538f4727/)
+git merge <название ветки> # слияние веток
+git branch -D <название ветки> # безопаснее с флагом -d
 
