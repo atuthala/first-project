@@ -114,6 +114,15 @@ git diff main~3 main
 
 
 
+[Практическая работа №2. Помогаем другу разобраться в ветках](https://practicum.yandex.ru/trainer/git-basics/lesson/624ddde6-b3ea-4834-87fb-e9919c07fd52/)
+[How do I clone all remote branches?](https://stackoverflow.com/questions/67699/how-do-i-clone-all-remote-branches)
+git clone git://example.com/myproject
+git branch -a
+To take a quick peek at an upstream branch, check it out directly:
+$ git checkout origin/experimental
+To work on that branch, create a local tracking branch, which is done automatically by:
+$ git checkout experimental
+
 
 
 
