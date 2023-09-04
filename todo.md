@@ -79,70 +79,69 @@ git status --ignored
 ## [Шпаргалка. Начало работы с Git](https://practicum.yandex.ru/trainer/git-basics/lesson/b1ecee27-bb78-46a0-8d13-0364c7803f55/)  
 
 
-## [Что такое ветка](https://practicum.yandex.ru/trainer/git-basics/lesson/e24f2080-0f2e-4f48-8d18-629ca1ad47fd/)
-$ mkdir learn_branches && cd learn_branches && git init # создали новый репозиторий
-$ touch README.md # создали файл
+## [Что такое ветка](https://practicum.yandex.ru/trainer/git-basics/lesson/e24f2080-0f2e-4f48-8d18-629ca1ad47fd/)  
+$ mkdir learn_branches && cd learn_branches && git init # создали новый репозиторий  
+$ touch README.md # создали файл  
 
-$ git add . # команда git add с флагом-точкой подготовит к сохранению текущую папку; вместо этого можно вызвать git add --all
-$ git commit -m "Выполнить первый коммит"
+  $ git add . # команда git add с флагом-точкой подготовит к сохранению текущую папку; вместо этого можно вызвать git add --all  
+$ git commit -m "Выполнить первый коммит"  
 
-$ git branch 
-* main # мы в основной ветке
+  $ git branch   
+* main # мы в основной ветке  
 
-// чтобы выйти из просмотра веток, может понадобиться Q!
-$ git add . && git commit -m "Обновить README" 
+  // чтобы выйти из просмотра веток, может понадобиться Q!  
+$ git add . && git commit -m "Обновить README"   
 
+  
+  
+## [Создаём ветку](https://practicum.yandex.ru/trainer/git-basics/lesson/c821887b-df5f-41de-a569-043a3cd6ae7d/)  
+$ git branch feature/add-branch-info # создали ветку feature/add-branch-info  
+$ git branch # посмотрели ветки  
 
+  
+  
+## [Шагаем с ветки на ветку](https://practicum.yandex.ru/trainer/git-basics/lesson/210ad536-f27e-4265-a891-54e913a33f91/)  
+$ git checkout feature/add-branch-info # перешли в новую ветку  
+Switched to branch 'feature/add-branch-info'  
+$ git checkout -b bugfix/fix-branch # создали ветку и сразу на неё переключились  
+Switched to a new branch 'bugfix/fix-branch'  
 
-[Создаём ветку](https://practicum.yandex.ru/trainer/git-basics/lesson/c821887b-df5f-41de-a569-043a3cd6ae7d/)
-$ git branch feature/add-branch-info # создали ветку feature/add-branch-info
-$ git branch # посмотрели ветки
+  
+  
+## [Сравниваем ветки](https://practicum.yandex.ru/trainer/git-basics/lesson/52d55cb1-6b66-4bcf-ac12-d4dfd574d628/)  
+$ git diff HEAD~ HEAD   
+git diff main~3 main  
 
+  
+  
+## [Практическая работа №2. Помогаем другу разобраться в ветках](https://practicum.yandex.ru/trainer/git-basics/lesson/624ddde6-b3ea-4834-87fb-e9919c07fd52/)  
+[How do I clone all remote branches?](https://stackoverflow.com/questions/67699/how-do-i-clone-all-remote-branches)  
+git clone git://example.com/myproject  
+git branch -a  
+To take a quick peek at an upstream branch, check it out directly:  
+$ git checkout origin/experimental  
+To work on that branch, create a local tracking branch, which is done automatically by:  
+$ git checkout experimental  
 
+  
 
-[Шагаем с ветки на ветку](https://practicum.yandex.ru/trainer/git-basics/lesson/210ad536-f27e-4265-a891-54e913a33f91/)
-$ git checkout feature/add-branch-info # перешли в новую ветку
-Switched to branch 'feature/add-branch-info'
-$ git checkout -b bugfix/fix-branch # создали ветку и сразу на неё переключились
-Switched to a new branch 'bugfix/fix-branch'
+## [Объединяем и удаляем ветки](https://practicum.yandex.ru/trainer/git-basics/lesson/60a94ca8-1517-45bd-9d23-ceb1538f4727/)  
+git merge <название ветки> # слияние веток  
+git branch -D <название ветки> # безопаснее с флагом -d  
 
+  
+  
+## [7.8 Инструменты Git - Продвинутое слияние][https://git-scm.com/book/ru/v2/Инструменты-Git-Продвинутое-слияние]  
 
-
-[Сравниваем ветки](https://practicum.yandex.ru/trainer/git-basics/lesson/52d55cb1-6b66-4bcf-ac12-d4dfd574d628/)
-$ git diff HEAD~ HEAD 
-git diff main~3 main
-
-
-
-[Практическая работа №2. Помогаем другу разобраться в ветках](https://practicum.yandex.ru/trainer/git-basics/lesson/624ddde6-b3ea-4834-87fb-e9919c07fd52/)
-[How do I clone all remote branches?](https://stackoverflow.com/questions/67699/how-do-i-clone-all-remote-branches)
-git clone git://example.com/myproject
-git branch -a
-To take a quick peek at an upstream branch, check it out directly:
-$ git checkout origin/experimental
-To work on that branch, create a local tracking branch, which is done automatically by:
-$ git checkout experimental
-
-
-
-[Объединяем и удаляем ветки](https://practicum.yandex.ru/trainer/git-basics/lesson/60a94ca8-1517-45bd-9d23-ceb1538f4727/)
-git merge <название ветки> # слияние веток
-git branch -D <название ветки> # безопаснее с флагом -d
-
-
-
-[7.8 Инструменты Git - Продвинутое слияние][https://git-scm.com/book/ru/v2/Инструменты-Git-Продвинутое-слияние]
-
-
-
-[Обратно на GitHub](https://practicum.yandex.ru/trainer/git-basics/lesson/74a3cc13-8fb2-4fcf-8d5d-fcdd8ec0f3c6/)
-создать на GitHub новый репозиторий git-branches
-загрузить в него локальный проект git-branches
-git remote add origin git@github.com:%ИМЯ_АККАУНТА%/git-branches.git
-git push -u origin main
-git checkout main
-git checkout -b feature/merge-request
-git push origin feature/merge-request # отправить ветку feature/merge-request на GitHub
-
+  
+  
+## [Обратно на GitHub](https://practicum.yandex.ru/trainer/git-basics/lesson/74a3cc13-8fb2-4fcf-8d5d-fcdd8ec0f3c6/)  
+создать на GitHub новый репозиторий git-branches  
+загрузить в него локальный проект git-branches  
+git remote add origin git@github.com:%ИМЯ_АККАУНТА%/git-branches.git  
+git push -u origin main  
+git checkout main  
+git checkout -b feature/merge-request  
+git push origin feature/merge-request # отправить ветку feature/merge-request на GitHub  
 
 
