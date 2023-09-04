@@ -135,4 +135,14 @@ git branch -D <название ветки> # безопаснее с флаго
 
 
 
+[Обратно на GitHub](https://practicum.yandex.ru/trainer/git-basics/lesson/74a3cc13-8fb2-4fcf-8d5d-fcdd8ec0f3c6/)
+создать на GitHub новый репозиторий git-branches
+загрузить в него локальный проект git-branches
+git remote add origin git@github.com:%ИМЯ_АККАУНТА%/git-branches.git
+git push -u origin main
+git checkout main
+git checkout -b feature/merge-request
+git push origin feature/merge-request # отправить ветку feature/merge-request на GitHub
+
+
 
