@@ -100,6 +100,15 @@ $ git branch # посмотрели ветки
 
 
 
+[Шагаем с ветки на ветку](https://practicum.yandex.ru/trainer/git-basics/lesson/210ad536-f27e-4265-a891-54e913a33f91/)
+$ git checkout feature/add-branch-info # перешли в новую ветку
+Switched to branch 'feature/add-branch-info'
+$ git checkout -b bugfix/fix-branch # создали ветку и сразу на неё переключились
+Switched to a new branch 'bugfix/fix-branch'
+
+
+
+
 
 
 
