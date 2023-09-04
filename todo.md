@@ -91,3 +91,16 @@ $ git branch
 
 // чтобы выйти из просмотра веток, может понадобиться Q!
 $ git add . && git commit -m "Обновить README" 
+
+
+
+[Создаём ветку](https://practicum.yandex.ru/trainer/git-basics/lesson/c821887b-df5f-41de-a569-043a3cd6ae7d/)
+$ git branch feature/add-branch-info # создали ветку feature/add-branch-info
+$ git branch # посмотрели ветки
+
+
+
+
+
+
+
