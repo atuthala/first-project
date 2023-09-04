@@ -108,6 +108,12 @@ Switched to a new branch 'bugfix/fix-branch'
 
 
 
+[Сравниваем ветки](https://practicum.yandex.ru/trainer/git-basics/lesson/52d55cb1-6b66-4bcf-ac12-d4dfd574d628/)
+$ git diff HEAD~ HEAD 
+git diff main~3 main
+
+
+
 
 
 
