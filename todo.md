@@ -114,10 +114,13 @@ git diff main~3 main
 
   
   
-## [Практическая работа №2. Помогаем другу разобраться в ветках](https://practicum.yandex.ru/trainer/git-basics/lesson/624ddde6-b3ea-4834-87fb-e9919c07fd52/)  
-[How do I clone all remote branches?](https://stackoverflow.com/questions/67699/how-do-i-clone-all-remote-branches)  
+## [Практическая работа №2. Помогаем другу разобраться в ветках](https://practicum.yandex.ru/trainer/git-basics/lesson/624ddde6-b3ea-4834-87fb-e9919c07fd52/) 
+
+
+
+## [How do I clone all remote branches?](https://stackoverflow.com/questions/67699/how-do-i-clone-all-remote-branches)  
 git clone git://example.com/myproject  
-git branch -a  
+git branch -a   # увидеть все ветки даже дальние
 To take a quick peek at an upstream branch, check it out directly:  
 $ git checkout origin/experimental  
 To work on that branch, create a local tracking branch, which is done automatically by:  
@@ -145,3 +148,28 @@ git checkout -b feature/merge-request
 git push origin feature/merge-request # отправить ветку feature/merge-request на GitHub  
 
 
+
+## [Создаём pull request](https://practicum.yandex.ru/trainer/git-basics/lesson/8a758c45-1455-4c29-9bcc-ec5318f193ef/)
+Залили изменеия из основной ветки в свою  
+и отправляем её в дальний репозиторий  
+делаем Pull Request (на сайте) с целью ознакомить других разработчиков и получить их одобрение  
+
+
+
+## [Забираем изменения из удалённого репозитория](https://practicum.yandex.ru/trainer/git-basics/lesson/bd52c59c-ae07-4f8e-8e1c-23942fa3ffab/)  
+$ git checkout main # перешли в main (выбираем ветку изменения которой мы хотим проверить)  
+$ git pull # подтянули новые изменения в main  
+$ git checkout my-branch # вернулись в рабочую ветку my-branch  
+$ git merge main # влили main в новую ветку my-branch  
+$ git push -u origin my-branch # отправили ветку my-branch в удалённый репозиторий   
+
+
+
+## [Практическая работа №4. Выходим из отпуска — и узнаём, что проект изменился](https://practicum.yandex.ru/trainer/git-basics/lesson/e84cc2b7-58ad-45c9-808e-133d09d03672/)  
+$ git remote rm origin # эта команда удалит текущий origin  
+$ git remote add origin git@github.com:%ВАШ_АККАУНТ%/github-case.git 
+$ git push -u origin feature/my-branch  
+создаём Pull Request
+
+ 
+ 
