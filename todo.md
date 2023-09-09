@@ -174,13 +174,24 @@ $ git push -u origin feature/my-branch
  
  
 ## [Что такое fast-forward](https://practicum.yandex.ru/trainer/git-basics/lesson/8ce6c2e4-12e8-4e8b-ac9d-940b3ac05b51/)  
+// находимся в ветке main  
+// --no-edit отключает ввод сообщения для merge-коммита  
+// --no-ff отключает fast-forward слияние веток  
+$ git merge --no-edit --no-ff add-docs  
+// с флагом --graph  
+// Git нарисует ветки с помощью «палочек» и «звёздочек»  
+// получившийся коммит слияния: 6814789  
+$ git log --graph --oneline  
+// fast-forward можно отключить «навсегда»   
+merge.ff: git config [--global] merge.ff false  
+
+
+
+## [Non-fast-forward](https://practicum.yandex.ru/trainer/git-basics/lesson/15902634-386d-439c-879c-405b37f834d1/)  
+// команде git log можно указать несколько веток,  
+// и тогда она выведет их все  
+$ git log --graph --oneline main add-docs  
 // находимся в ветке main
-// --no-edit отключает ввод сообщения для merge-коммита
-// --no-ff отключает fast-forward слияние веток
-$ git merge --no-edit --no-ff add-docs
-// с флагом --graph
-// Git нарисует ветки с помощью «палочек» и «звёздочек»
-// получившийся коммит слияния: 6814789
-$ git log --graph --oneline
-// fast-forward можно отключить «навсегда» 
-merge.ff: git config [--global] merge.ff false
+// --no-edit избавляет от необходимости
+// вводить сообщение для merge-коммита
+$ git merge --no-edit add-docs
