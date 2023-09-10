@@ -62,7 +62,7 @@ git diff --staged
 
 
 ## [Игнорирование файлов в Git](https://practicum.yandex.ru/trainer/git-basics/lesson/92ba6ab8-c151-45ad-a0be-ffa4de31c537/)  
-.gitignore  
+<!-- .gitignore  
 *.jpeg  
 !doge.jpeg - инвертировать игнорирование  
 docs/*/tmp  
@@ -73,7 +73,7 @@ build/ - игнорировать папку build
 docs/**/tmp - игнорировать в папке и подпапках  
 *.log - игнорировать все  
 !examples/**/*.log - не игнорировать в папках examples  
-git status --ignored  
+git status --ignored   -->
 
 
 ## [Шпаргалка. Начало работы с Git](https://practicum.yandex.ru/trainer/git-basics/lesson/b1ecee27-bb78-46a0-8d13-0364c7803f55/)  
@@ -195,3 +195,8 @@ $ git log --graph --oneline main add-docs
 // --no-edit избавляет от необходимости
 // вводить сообщение для merge-коммита
 $ git merge --no-edit add-docs
+
+
+## [git push и fast-forward](https://practicum.yandex.ru/trainer/git-basics/lesson/5b367127-af6d-4a2c-8c48-1582a7156ff4/)  
+// просто «выкинет» (удалит) коммит D и запишет в main@origin коммиты из main  
+git push --force   
