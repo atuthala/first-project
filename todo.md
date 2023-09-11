@@ -200,3 +200,16 @@ $ git merge --no-edit add-docs
 ## [git push и fast-forward](https://practicum.yandex.ru/trainer/git-basics/lesson/5b367127-af6d-4a2c-8c48-1582a7156ff4/)  
 // просто «выкинет» (удалит) коммит D и запишет в main@origin коммиты из main  
 git push --force   
+
+
+## [Работа с PR: практика](https://practicum.yandex.ru/trainer/git-basics/lesson/f1ba7b87-c4ea-4e6a-9406-0ec8fe2bdd82/)  
+https://github.com/yandex-praktikum/git-course-pr-example  
+$ git checkout main && git pull  
+$ git push --set-upstream origin HEAD  
+ ИЛИ
+$ git push -u origin feature-goose-poem
+// делаем Pull Request
+// После «мёржа» PR рекомендуем обновить локальную main: 
+$ git checkout main && git pull
+
+
