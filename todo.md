@@ -225,10 +225,15 @@ git checkout main && git merge br1 && \
 git checkout main && git merge br2 && \  
 & git status  
 // Подготовьте изменения к сохранению и сделайте коммит.  
-$ git add . && git commit --no-edit  
-// Имитируем конфликт из урока и вызываем vimdiff
-git mergetool
-// Команды git gl не существует в Git
-[почитать в документации.](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases)
-git log --oneline --abbrev-commit --graph --date=short --pretty=format:'%h - %an, %cd : %s'
+$ git add . && git commit --no-edit    
+// Имитируем конфликт из урока и вызываем vimdiff  
+git mergetool  
+// Команды git gl не существует в Git  
+[почитать в документации.](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases)  
+git log --oneline --abbrev-commit --graph --date=short --pretty=format:'%h - %an, %cd : %s'  
+
+
+## [Разрешение конфликта через Visual Studio Code](https://practicum.yandex.ru/trainer/git-basics/lesson/653d1bce-8700-46db-8ddd-cf39a0575a1f/)  
+
+
 
