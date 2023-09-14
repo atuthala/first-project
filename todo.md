@@ -1,32 +1,78 @@
 
-## Связываем локальный и удалённый репозитории
-https://practicum.yandex.ru/trainer/git-basics/lesson/19d174db-bd33-4307-a8e7-61b749a1639c/  
-$  
-ssh-keygen -t ed25519 -C atutsasha@gmail.com  
-cat ~/.ssh/ed25519.pub  
+# Синхронизация репозиториев
+## [Что такое SSH. Генерируем SSH-ключ](https://practicum.yandex.ru/trainer/git-basics/lesson/42435683-0922-4231-bfb4-d7d32d61f50a/)  
+// перешли в домашнюю директорию  
+cd ~   
+// вывели список созданных ключей  
+ls -la .ssh/  
+// Для генерации SSH-пары можно использовать программу ssh-keygen  
+ssh-keygen -t ed25519 -C <электронная почта, к которой привязан ваш аккаунт на GitHub>  
+// или  
+ssh-keygen -t rsa -b 4096 -C <электронная почта, к которой привязан ваш аккаунт на GitHub>  
+// После ввода отобразится такое сообщение.  
+> Generating public/private rsa key pair. // сгенерированы публичный и приватный ключи  
+// программа запросит путь для сохранения ключа и кодовую фразу(можно оставить пустой)  
+// проверить что ключи сгенерировались  
+ls -a ~/.ssh   
+
+
+
+
+## [Привязываем SSH-ключ к GitHub](https://practicum.yandex.ru/trainer/git-basics/lesson/4d662a58-3602-4c5c-9fad-be8cff334f37/)  
+// скопировать содержимое ключа в буфер обмена:
+pbcopy < ~/.ssh/id_rsa.pub  
+// или вручную  
+cat ~/.ssh/id_rsa.pub  
+// Перейдите на GitHub и выберите пункт Settings (англ. «настройки») в меню аккаунта.  
+// В меню слева нажмите на пункт SSH and GPG keys.  
+// В открывшейся вкладке выберите New SSH key (англ. «новый SSH-ключ»).  
+// В поле Title (англ. «заголовок») напишите название ключа. Например, Personal key (англ. «личный ключ»).  
+// В поле Key type (англ. «тип ключа») должно быть Authentication Key (англ. «ключ аутентификации»).  
+// В поле Key скопируйте ваш ключ из буфера обмена.  
+// Нажмите на кнопку Add SSH key (англ. «добавить SSH-ключ»).  
+// Проверьте правильность ключа с помощью следующей команды.  
 ssh -T git@github.com  
 	yes  
-cd ~/dev/first-project  
+
+
+
+
+## [Связываем локальный и удалённый репозитории](https://practicum.yandex.ru/trainer/git-basics/lesson/19d174db-bd33-4307-a8e7-61b749a1639c/)  
+// перейти в проект на компьютере локально
+cd ~/dev/first-project 
+// привязать дальний репозиторий(хранилище) 
 git remote add origin git@github.com:atutsasha/first-project.git  
+// посмотреть связанные репозитории   
 git remote -v  
 
 
+
 ## Синхронизируем локальный и удалённый репозитории
-https://practicum.yandex.ru/trainer/git-basics/lesson/89142add-f139-4c26-a467-4628eac2d0a7/  
-$  
+https://practicum.yandex.ru/trainer/git-basics/lesson/89142add-f139-4c26-a467-4628eac2d0a7/ 
 git push -u origin main  
-Если команда приведёт к ошибке, попробуйте  
+// Если команда приведёт к ошибке, попробуйте  
 заменить main на master.  
 
 
+
+## [Файл README.md](https://practicum.yandex.ru/trainer/git-basics/lesson/c6b9607c-e8bc-4446-89f9-c74522c3492f/)  
+
+
+
+## [Практическая работа №1. «Делимся проектом с миром»](https://practicum.yandex.ru/trainer/git-basics/lesson/b980e3ff-cbc1-4c3d-87f9-8d708e9e121d/)  
+
+
+
+
 ## Исследуем лог
-$  
 git log --oneline  
 q  
 
 
 ## Соглашение о коммитах  
 https://www.conventionalcommits.org/ru/v1.0.0-beta.4/#спецификация  
+
+
 
 ## Mermaid  
 https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/  
