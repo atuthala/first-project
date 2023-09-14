@@ -213,3 +213,22 @@ $ git push -u origin feature-goose-poem
 $ git checkout main && git pull
 
 
+
+## [Разрешение конфликта вручную и через vimdiff](https://practicum.yandex.ru/trainer/git-basics/lesson/df8f8fed-e3f8-44bd-90e4-3e67bc02e507/)  
+$  
+mkdir git-conflict && cd git-conflict && git init && git branch -m main && \  
+echo 'main version' > readme.md && git add . && git commit -m 'main' && \  
+git checkout -b br1 && echo 'version 1' > readme.md && git add . && git commit -m 'v1' && \  
+git checkout main && \  
+git checkout -b br2 && echo 'version 2' > readme.md && git add . && git commit -m 'v2'  && \  
+git checkout main && git merge br1 && \  
+git checkout main && git merge br2 && \  
+& git status  
+// Подготовьте изменения к сохранению и сделайте коммит.  
+$ git add . && git commit --no-edit  
+// Имитируем конфликт из урока и вызываем vimdiff
+git mergetool
+// Команды git gl не существует в Git
+[почитать в документации.](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases)
+git log --oneline --abbrev-commit --graph --date=short --pretty=format:'%h - %an, %cd : %s'
+
