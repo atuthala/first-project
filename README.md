@@ -1,17 +1,12 @@
-# Файл README.md
-
-https://practicum.yandex.ru/trainer/git-basics/lesson/c6b9607c-e8bc-4446-89f9-c74522c3492f/
+# [Файл README.md](https://practicum.yandex.ru/trainer/git-basics/lesson/c6b9607c-e8bc-4446-89f9-c74522c3492f/)  
 
 
-Шпаргалка по Markdown
-https://gist.github.com/fomvasss/8dd8cd7f88c67a4e3727f9d39224a84c
+[Шпаргалка по Markdown](https://gist.github.com/fomvasss/8dd8cd7f88c67a4e3727f9d39224a84c)  
 
 
-Markdown Cheat Sheet  space
-https://www.markdownguide.org/cheat-sheet/
+[Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
 
 ----
-
 
 ## Выделение текста
 *звёздочки* или _подчёркивания_
