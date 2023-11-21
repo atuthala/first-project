@@ -38,20 +38,19 @@ ssh -T git@github.com
 
 
 ## [Связываем локальный и удалённый репозитории](https://practicum.yandex.ru/trainer/git-basics/lesson/19d174db-bd33-4307-a8e7-61b749a1639c/)  
-// перейти в проект на компьютере локально
-cd ~/dev/first-project 
-// привязать дальний репозиторий(хранилище) 
+// перейти в проект на компьютере локально  
+cd ~/dev/first-project  
+// привязать дальний репозиторий(хранилище)  
 git remote add origin git@github.com:atutsasha/first-project.git  
-// посмотреть связанные репозитории   
+// посмотреть связанные репозитории  
 git remote -v  
 
 
 
-## Синхронизируем локальный и удалённый репозитории
-https://practicum.yandex.ru/trainer/git-basics/lesson/89142add-f139-4c26-a467-4628eac2d0a7/ 
+## [Синхронизируем локальный и удалённый репозитории](https://practicum.yandex.ru/trainer/git-basics/lesson/89142add-f139-4c26-a467-4628eac2d0a7/ )
 git push -u origin main  
 // Если команда приведёт к ошибке, попробуйте  
-заменить main на master.  
+// заменить main на master.  
 
 
 
@@ -64,18 +63,18 @@ git push -u origin main
 
 
 
-## Исследуем лог
+## [Исследуем лог](https://practicum.yandex.ru/trainer/git-basics/lesson/2e019bb7-08bf-49ed-9860-26c0bdd8fe8a/)
+// получить сокращенный лог  
 git log --oneline  
+// выход из просмотра логов
 q  
 
 
-## Соглашение о коммитах  
-https://www.conventionalcommits.org/ru/v1.0.0-beta.4/#спецификация  
+## [Соглашение о коммитах](https://www.conventionalcommits.org/ru/v1.0.0-beta.4/#спецификация)  
 
 
 
-## Mermaid  
-https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/  
+## [Mermaid](https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/)  
 
 ```mermaid
 %% описание схемы  
@@ -88,18 +87,25 @@ graph LR;
 ``` 
 
 
-## Как исправить коммит  
+## [Как исправить коммит](https://practicum.yandex.ru/trainer/git-basics/lesson/298b9e02-74a7-43be-8056-5780c0e04985/)  
+// добавить файл или изменения но оставить имя коммита прежним  
 git commit --amend --no-edit  
+// переименовать коммит
 git commit --amend -m 'Переименовать коммит'  
-Esc :qa! - выход из Vim  
+// для выхода из редактра Vim нажимаем клавишу Esc  
+:qa! - выход из Vim  
 Исправили.
 
 
 ## [Как откатиться назад, если «всё сломалось»](https://practicum.yandex.ru/trainer/git-basics/lesson/78d6157b-a248-4c26-a2f8-5b7bdf270bc4/)  
-Команда git restore --staged <file> переведёт файл из staged обратно в modified или untracked.  
+// переведёт файл из staged обратно в modified или untracked.  
+// обратная команде git add <file>  
+Команда git restore --staged <file>  
 Команда git reset --hard <commit hash> «откатит» историю до коммита с хешем <hash>. Более поздние коммиты потеряются!  
 Команда git restore <file> «откатит» изменения в файле до последней сохранённой (в коммите или в staging) версии.  
 
+
+ ## [Практическая работа №3. Нужно откатить изменения](https://practicum.yandex.ru/trainer/git-basics/lesson/2b9999de-518a-4911-a330-a1f084bb281e/)  
 
 
 ## Просматриваем изменения в файлах  
