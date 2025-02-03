@@ -51,7 +51,7 @@ git push -u origin main
 ## [Практическая работа №1. «Делимся проектом с миром»](https://practicum.yandex.ru/trainer/git-basics/lesson/b980e3ff-cbc1-4c3d-87f9-8d708e9e121d/)  
 ## [Исследуем лог](https://practicum.yandex.ru/trainer/git-basics/lesson/2e019bb7-08bf-49ed-9860-26c0bdd8fe8a/)
 // получить сокращенный лог  
-git log --oneline  
+git log --oneline --graph
 // выход из просмотра логов
 q  
 
