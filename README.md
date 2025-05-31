@@ -311,3 +311,24 @@ git log --oneline --abbrev-commit --graph --date=short --pretty=format:'%h - %an
 2. Открыть файл, в котором есть конфликт.
 3. Выбрать, какие части файла нужно взять из одной ветки, а какие — из другой.
 4. Когда конфликты разрешены, сделать коммит: git commit --no-edit или git commit -m 'merge branch <название ветки>'.
+
+## Примеры
+### Задание 1.
+Слить боковую ветку с текущей, так что бы новые входящие коммиты слились в один.
+#### Решение.
+1. git checkout main
+2. git merge --squash feature-branch-patch
+3. git commit -m "Merge branch 'feature-branch-patch' into main as a single commit"
+
+### Задание 2.
+Удалить ветку дальнию на дельнем репозитории (remote) и в своём локальном репозитории.
+#### Решение.
+1. git push origin --delete имя-ветки
+2. или
+3. git push origin :имя-ветки
+4. Потом удаляем локальную:
+5. git branch -d имя-ветки
+6. или принудительно если не слита (merge or rebase)
+7. git branch -D имя-ветки
+
+
